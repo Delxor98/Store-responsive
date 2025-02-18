@@ -3,200 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- estilos bootstrap -->
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- titulo de la pagina -->
+    <!-- Título de la página -->
     <title>Store-responsive</title>
-
-    <!--link css-->
-    <link rel="stylesheet" href="../css/index.css">
-
-
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="src/css/index.css">
 </head>
-<body> 
-
-<!-- Navbar -->
-<nav class="navbar navbar-dark bg-dark">
-    <div class="container-fluid flex-container">
-
-        <a href="" class="navbar-brand">Store-responsive</a>
-        <button class="navbar-toggler" type="button"data-bs-toggle ="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
-              </svg>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid flex-container">
+            <a href="" class="navbar-brand">Store-responsive</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                </svg>
             </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item active" ><a href="" class="nav-link">home</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">product</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">about</a></li>
+                    <li class="nav-item active"><a href="" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Product</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">About</a></li>
                 </ul>
-            </div>    
-    </div>
-</nav>
-
-<!-- Header -->
-<header class="header">
-    <div class="black">
-        <h1 class="title animate__animated animate__fadeInDown">Welcome to Store Responsive ALA</h1>
-        <p class="subtitle animate__animated animate__fadeInUp">Your one-stop shop for the best products</p>
-    </div>
-</header>
-
-<!-- Main Content -->
-<main class="container">
-    <!-- Carousel -->
-    <div class="carousel slide mt-5" id="carouselExampleIndicators" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="assets/img/fortnite.jpg" alt="Retro gaming" class="d-block w-100">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Retro Gaming</h5>
-                    <p>Relive the classics with our retro collection.</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="assets/img/mando.png" alt="Game controller" class="d-block w-100">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Modern Controllers</h5>
-                    <p>Experience the latest in gaming technology.</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="assets/img/nintendo.jpg" alt="Nintendo console" class="d-block w-100">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Nintendo Consoles</h5>
-                    <p>Explore the world of Nintendo.</p>
-                </div>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </button>
+    </nav>
+
+    <!-- Header -->
+    <div class="header">
+        <header>
+            <div class="black">
+                <h1 class="tittle">Welcome to Store Responsive</h1>
+            </div>
+        </header>
     </div>
 
-    <!-- Cards Section -->
-    <section class="section mt-5">
-        <h2 class="text-center mb-4 animate__animated animate__fadeIn">Featured Products</h2>
-        <div class="row">
+    <!-- Contenido Principal -->
+    <div class="container">
+        <!-- Carrusel -->
+        <div class="carrusel">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/img/retro.jpg" class="d-block w-100" alt="Retro Gaming">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/mando.png" class="d-block w-100" alt="Controladores">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/nintendo.jpg" class="d-block w-100" alt="Nintendo">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Sección de tarjetas -->
+        <section class="section">
             <!-- Primera hilera de cards -->
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="assets/img/switch.jpg" class="card-img-top" alt="Product 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Product 1</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, porro!</p>
-                        <a href="#" class="btn btn-primary">Buy Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="assets/img/fortnite.jpg" class="card-img-top" alt="Product 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Product 2</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, porro!</p>
-                        <a href="#" class="btn btn-primary">Buy Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="assets/img/pc-gamer.jpg" class="card-img-top" alt="Product 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Product 3</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, porro!</p>
-                        <a href="#" class="btn btn-primary">Buy Now</a>
-                    </div>
+            <div class="card">
+                <img src="assets/img/retro.jpg" class="card-img-top" alt="Retro Gaming">
+                <div class="card-body">
+                    <h5 class="card-title">Retro Gaming</h5>
+                    <p class="card-text">Explora nuestra colección de juegos retro y revive la nostalgia.</p>
+                    <a href="#" class="btn btn-primary">Ver más</a>
                 </div>
             </div>
 
+            <div class="card">
+                <img src="assets/img/mando.png" class="card-img-top" alt="Controladores">
+                <div class="card-body">
+                    <h5 class="card-title">Controladores</h5>
+                    <p class="card-text">Los mejores controladores para tu consola favorita.</p>
+                    <a href="#" class="btn btn-primary">Ver más</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="assets/img/nintendo.jpg" class="card-img-top" alt="Nintendo">
+                <div class="card-body">
+                    <h5 class="card-title">Nintendo</h5>
+                    <p class="card-text">Descubre los últimos lanzamientos de Nintendo.</p>
+                    <a href="#" class="btn btn-primary">Ver más</a>
+                </div>
+            </div>
 
             <!-- Segunda hilera de cards -->
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="assets/img/switch.jpg" class="card-img-top" alt="Product 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Product 1</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, porro!</p>
-                        <a href="#" class="btn btn-primary">Buy Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="assets/img/fortnite.jpg" class="card-img-top" alt="Product 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Product 2</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, porro!</p>
-                        <a href="#" class="btn btn-primary">Buy Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="assets/img/pc-gamer.jpg" class="card-img-top" alt="Product 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Product 3</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, porro!</p>
-                        <a href="#" class="btn btn-primary">Buy Now</a>
-                    </div>
+            <div class="card">
+                <img src="assets/img/ps5.jpg" class="card-img-top" alt="PS5">
+                <div class="card-body">
+                    <h5 class="card-title">PS5</h5>
+                    <p class="card-text">Todo lo que necesitas para tu PlayStation 5.</p>
+                    <a href="#" class="btn btn-primary">Ver más</a>
                 </div>
             </div>
 
-
-            <!-- Primera hilera de cards -->
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="assets/img/switch.jpg" class="card-img-top" alt="Product 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Product 1</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, porro!</p>
-                        <a href="#" class="btn btn-primary">Buy Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="assets/img/fortnite.jpg" class="card-img-top" alt="Product 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Product 2</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, porro!</p>
-                        <a href="#" class="btn btn-primary">Buy Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="assets/img/pc-gamer.jpg" class="card-img-top" alt="Product 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Product 3</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, porro!</p>
-                        <a href="#" class="btn btn-primary">Buy Now</a>
-                    </div>
+            <div class="card">
+                <img src="assets/img/xboxseriesx.jpg" class="card-img-top" alt="Xbox">
+                <div class="card-body">
+                    <h5 class="card-title">Xbox Series X</h5>
+                    <p class="card-text">Los mejores juegos y accesorios para Xbox.</p>
+                    <a href="#" class="btn btn-primary">Ver más</a>
                 </div>
             </div>
 
-        </div>
+            <div class="card">
+                <img src="assets/img/pc gaming.webp" class="card-img-top" alt="PC Gaming">
+                <div class="card-body">
+                    <h5 class="card-title">PC Gaming</h5>
+                    <p class="card-text">Componentes y periféricos para tu setup gamer.</p>
+                    <a href="#" class="btn btn-primary">Ver más</a>
+                </div>
+            </div>
 
-        <!-- Segunda y tercera hilera de cards (repetir estructura) -->
-    </section>
-</main>
+            <!-- Tercera hilera de cards -->
+            <div class="card">
+                <img src="assets/img/realidadvirtual.jpg" class="card-img-top" alt="Realidad Virtual">
+                <div class="card-body">
+                    <h5 class="card-title">Realidad Virtual</h5>
+                    <p class="card-text">Sumérgete en el mundo de la realidad virtual.</p>
+                    <a href="#" class="btn btn-primary">Ver más</a>
+                </div>
+            </div>
 
-<!-- Footer -->
-<footer class="footer bg-dark text-white text-center py-4 mt-5">
-    <h3 class="footer-title">Store-responsive</h3>
-    <p class="mb-0">&copy; 2023 Store-responsive. All rights reserved.</p>
-</footer>
+            <div class="card">
+                <img src="assets/img/accesorios pc.jpg" class="card-img-top" alt="Accesorios">
+                <div class="card-body">
+                    <h5 class="card-title">Accesorios</h5>
+                    <p class="card-text">Mejora tu experiencia con nuestros accesorios.</p>
+                    <a href="#" class="btn btn-primary">Ver más</a>
+                </div>
+            </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+            <div class="card">
+                <img src="assets/img/merchandising.jpg" class="card-img-top" alt="Merchandising">
+                <div class="card-body">
+                    <h5 class="card-title">Merchandising</h5>
+                    <p class="card-text">Productos exclusivos de tus marcas favoritas.</p>
+                    <a href="#" class="btn btn-primary">Ver más</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <h1 class="footer-title">Store-responsive</h1>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
